@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  
+
+  <!-- Custom StyleSheet -->
+  <link rel="stylesheet" href="login_styles.css" />
+  <title>Sneaker Hub | Products</title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><img src="./images/logo-name.png" alt=""></a>
+   
+
+    <nav class="navbar">
+      
+        <a href="#" class="fas fa-search"></a>
+        <a href="index.html">home</a>
+        <a href="products.html">shop</a>
+        <a href="cart.html">cart</a>
+        <a href="login.html" class="far fa-user"></a>
+    </nav>
+</header>
+
+
+
+<div class="wrapper">
+  <div class="title-text">
+     <div class="title login">
+        Login <span>Form</span>
+     </div>
+     <div class="title signup">
+        Signup <span>Form</span>
+     </div>
+  </div>
+  <div class="form-container">
+     <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">LogIn</label>
+        <label for="signup" class="slide signup">SignUp</label>
+        <div class="slider-tab"></div>
+     </div>
+     <div class="form-inner">
+        <form action="#" class="login">
+           <div class="field">
+              <input type="text" placeholder="Email Address" required>
+           </div>
+           <div class="field">
+              <input type="password" placeholder="Password" required>
+           </div>
+           <div class="pass-link">
+              <a href="#">Forgot password?</a>
+           </div>
+           <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login">
+           </div>
+           <div class="signup-link">
+              Not a member? <a href="">Signup now</a>
+           </div>
+        </form>
+        <form action="#" class="signup">
+           <div class="field">
+              <input type="text" placeholder="Email Address" required>
+           </div>
+           <div class="field">
+              <input type="password" placeholder="Password" required>
+           </div>
+           <div class="field">
+              <input type="password" placeholder="Confirm password" required>
+           </div>
+           <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup">
+           </div>
+        </form>
+     </div>
+  </div>
+</div>
+<script>
+  const loginText = document.querySelector(".title-text .login");
+  const loginForm = document.querySelector("form.login");
+  const loginBtn = document.querySelector("label.login");
+  const signupBtn = document.querySelector("label.signup");
+  const signupLink = document.querySelector("form .signup-link a");
+  signupBtn.onclick = (()=>{
+    loginForm.style.marginLeft = "-50%";
+    loginText.style.marginLeft = "-50%";
+  });
+  loginBtn.onclick = (()=>{
+    loginForm.style.marginLeft = "0%";
+    loginText.style.marginLeft = "0%";
+  });
+  signupLink.onclick = (()=>{
+    signupBtn.click();
+    return false;
+  });
+</script>
+</body>
+</html>
+
+  <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+
+        <div class="footer-center">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Brands</a>
+        </div>
+        <div class="footer-center">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-center">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            Dattapukur, West-Bengal -India
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            snikerhub@gmail.com
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            9477597648
+          </div>
+
+          <div class="social-icon">
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/facebook-new.png" /></a>
+            </div>
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/instagram-new.png" /></a>
+            </div>
+            <div class="social-item">
+              <a href="#"><img src="https://img.icons8.com/bubbles/50/000000/twitter.png" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p>Copyright © Prithwish Gangopadhyay.</p>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+    <!-- Glidejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+
+    <!-- Custom Scripts -->
+    <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
+
+
+</body>
+
+</html>
